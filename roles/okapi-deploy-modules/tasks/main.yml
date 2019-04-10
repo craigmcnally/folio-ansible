@@ -50,6 +50,10 @@
     login_password: "{{ item.pg_password }}"
     name: "{{ item.database }}"
     owner: "{{ item.pg_user }}"
+    encoding: UTF-8
+    lc_collate: und-x-icu
+    lc_ctype: und-x-icu
+    template: template0
   when: item.storage is defined and item.storage == "postgres"
   with_items: "{{ folio_modules }}"
   

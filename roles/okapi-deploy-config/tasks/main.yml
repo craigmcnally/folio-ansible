@@ -35,6 +35,10 @@
     login_password: "{{ pg_admin_password }}"
     name: "{{ module_database }}"
     owner: "{{ pg_admin_user }}"
+    encoding: UTF-8
+    lc_collate: und-x-icu
+    lc_ctype: und-x-icu
+    template: template0 
 
 - name: Copy deployment descriptors
   become: yes
