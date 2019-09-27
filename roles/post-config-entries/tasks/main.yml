@@ -1,6 +1,6 @@
 ---
 # pause
-- wait_for: timeout=5
+- wait_for: timeout=10
 
 - name: login to tenant
   uri:
