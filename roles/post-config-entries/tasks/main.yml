@@ -1,4 +1,7 @@
 ---
+# pause
+- wait_for: timeout=5
+
 - name: login to tenant
   uri:
     #url: "{{ okapi_url }}/authn/login"
