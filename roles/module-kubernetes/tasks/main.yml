@@ -1,4 +1,6 @@
 ---
+- name: debug token
+  debug: var=supertenant_token
 # Create Secret for required connection
 - name: create Secret DB Connection
   k8s:
